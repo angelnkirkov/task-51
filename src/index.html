@@ -8,6 +8,15 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      window.onload = function () {
+        setTimeout(loadAfterTime, 3000);
+      };
+
+      function loadAfterTime() {
+        document.getElementsByClassName("card")[0].style.display = "none";
+      }
+    </script>
   </head>
   <body>
     <div class="main">
