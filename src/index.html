@@ -14,7 +14,8 @@
       };
 
       function loadAfterTime() {
-        document.getElementsByClassName("card")[0].style.display = "none";
+        for (let el of document.querySelectorAll(".card"))
+          el.style.display = "none";
       }
     </script>
   </head>
